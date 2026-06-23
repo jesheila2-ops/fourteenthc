@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Happy Birthday, Baby 🩷</title>
+<link rel="stylesheet" href="fourteenth.css"/>
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="palagipiano.mp3" type="audio/mpeg">
+</audio>
+
+<div id="petals"></div>
+<button class="edit-btn" id="editBtn">✏️ Edit</button>
+
+<div class="page-dots" id="dots">
+  <div class="dot active" data-page="0"></div>
+  <div class="dot" data-page="1"></div>
+  <div class="dot" data-page="2"></div>
+  <div class="dot" data-page="3"></div>
+  <div class="dot" data-page="4"></div>
+  <div class="dot" data-page="5"></div>
+</div>
+
+
+<div class="page active" id="passwordPage">
+
+  <div class="password-card">
+    <div class="lock-icon">🔒</div>
+
+    <h1>Private Letter</h1>
+
+    <p>Only my baby can unlock this ❤️</p>
+
+    <input
+      type="password"
+      id="passwordInput"
+      placeholder="Enter the day u were born"
+    >
+
+    <button id="unlockBtn">
+      Unlock ♥
+    </button>
+
+    <p id="passwordMessage"></p>
+  </div>
+
+</div>
+
+<!-- PAGE 1: ENVELOPE -->
+<div class="page" id="p0">
+  <div class="envelope-title" id="envTitle">You got a mail!</div>
+  <div class="envelope-wrap" id="envBtn">
+    <div class="hearts-deco">
+      <svg viewBox="0 0 50 45" fill="none"><path d="M25 42C25 42 3 28 3 15C3 7 9 2 16 2C20 2 23 4 25 7C27 4 30 2 34 2C41 2 47 7 47 15C47 28 25 42 25 42Z" stroke="#8B0000" stroke-width="2"/></svg>
+      <svg viewBox="0 0 50 45" fill="none"><path d="M25 42C25 42 3 28 3 15C3 7 9 2 16 2C20 2 23 4 25 7C27 4 30 2 34 2C41 2 47 7 47 15C47 28 25 42 25 42Z" stroke="#8B0000" stroke-width="2"/></svg>
+      <svg viewBox="0 0 50 45" fill="none"><path d="M25 42C25 42 3 28 3 15C3 7 9 2 16 2C20 2 23 4 25 7C27 4 30 2 34 2C41 2 47 7 47 15C47 28 25 42 25 42Z" stroke="#8B0000" stroke-width="2"/></svg>
+    </div>
+    <svg class="envelope-svg" viewBox="0 0 380 260" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="10" width="360" height="240" rx="6" fill="#8B0000"/>
+      <polygon points="10,10 190,148 370,10" fill="#6d0000"/>
+      <polygon points="10,10 10,250 140,148" fill="#7a0000"/>
+      <polygon points="370,10 370,250 240,148" fill="#7a0000"/>
+      <circle cx="190" cy="158" r="36" fill="#c9a84c" opacity=".95"/>
+      <circle cx="190" cy="158" r="30" fill="#b8922a"/>
+      <text x="190" y="165" text-anchor="middle" font-size="26" fill="#6d0000">🌿</text>
+    </svg>
+    <div class="envelope-hint">tap on the envelope to open</div>
+  </div>
+</div>
+
+<!-- PAGE 2: ANNIVERSARY PHOTO -->
+<div class="page" id="p1">
+
+  <div class="anniv-overlay"></div>
+
+  <div class="anniv-content">
+    <div class="anniv-hearts">❤️ 💕 ❤️</div>
+
+    <h1 class="anniv-title">
+      Happy Birthday,
+    </h1>
+
+    <h2 class="anniv-subtitle">
+      My Baby ♥
+    </h2>
+
+    <div class="anniv-hearts bottom">
+      🌹 ❤️ 🌹
+    </div>
+
+    <button class="nav-btn ghost" id="annivNext">
+      Open Letter →
+    </button>
+  </div>
+
+</div>
+
+<!-- PAGE 3: LETTER -->
+<div class="page" id="p2">
+
+  <div class="letter-stage-v2">
+    <main class="letter-wrap-v2">
+
+      <article class="letter-card-v2" id="letterCard">
+        <span class="washi-v2 washi-v2--tl"></span>
+        <span class="washi-v2 washi-v2--br"></span>
+
+        <svg class="sprig-v2 sprig-v2--tl" viewBox="0 0 120 120" aria-hidden="true">
+          <g fill="none" stroke="#d4a0b0" stroke-width="1.6" stroke-linecap="round">
+            <path d="M10 95 C 30 70, 55 55, 95 30" />
+            <path d="M30 80 C 25 70, 22 62, 25 55" />
+            <path d="M55 60 C 50 50, 50 42, 55 35" />
+          </g>
+          <g fill="#e8a0b8">
+            <ellipse cx="28" cy="74" rx="6" ry="3" transform="rotate(-30 28 74)" />
+            <ellipse cx="42" cy="66" rx="7" ry="3.2" transform="rotate(-25 42 66)" />
+            <ellipse cx="58" cy="55" rx="6" ry="3" transform="rotate(-20 58 55)" />
+            <ellipse cx="74" cy="45" rx="6.5" ry="3" transform="rotate(-15 74 45)" />
+          </g>
+          <g transform="translate(92 32)">
+            <g fill="#f48fb1">
+              <ellipse cx="0" cy="-3.5" rx="2.2" ry="3.2" />
+              <ellipse cx="0" cy="-3.5" rx="2.2" ry="3.2" transform="rotate(72)" />
+              <ellipse cx="0" cy="-3.5" rx="2.2" ry="3.2" transform="rotate(144)" />
+              <ellipse cx="0" cy="-3.5" rx="2.2" ry="3.2" transform="rotate(216)" />
+              <ellipse cx="0" cy="-3.5" rx="2.2" ry="3.2" transform="rotate(288)" />
+            </g>
+            <circle r="1.8" fill="#ffd6e7" />
+          </g>
+        </svg>
+
+        <svg class="sprig-v2 sprig-v2--br" viewBox="0 0 120 120" aria-hidden="true">
+          <g fill="none" stroke="#d4a0b0" stroke-width="1.6" stroke-linecap="round">
+            <path d="M10 95 C 30 70, 55 55, 95 30" />
+            <path d="M30 80 C 25 70, 22 62, 25 55" />
+          </g>
+          <g fill="#e8a0b8">
+            <ellipse cx="42" cy="66" rx="7" ry="3.2" transform="rotate(-25 42 66)" />
+            <ellipse cx="58" cy="55" rx="6" ry="3" transform="rotate(-20 58 55)" />
+          </g>
+          <g transform="translate(92 32)">
+            <g fill="#f48fb1">
+              <ellipse cx="0" cy="-3.5" rx="2.2" ry="3.2" />
+              <ellipse cx="0" cy="-3.5" rx="2.2" ry="3.2" transform="rotate(72)" />
+              <ellipse cx="0" cy="-3.5" rx="2.2" ry="3.2" transform="rotate(144)" />
+              <ellipse cx="0" cy="-3.5" rx="2.2" ry="3.2" transform="rotate(216)" />
+              <ellipse cx="0" cy="-3.5" rx="2.2" ry="3.2" transform="rotate(288)" />
+            </g>
+            <circle r="1.8" fill="#ffd6e7" />
+          </g>
+        </svg>
+
+        <header>
+          <p class="letter-eyebrow-v2">a letter · for you</p>
+          <h1 class="letter-title-v2">to my love</h1>
+          <div class="letter-rule-v2" aria-hidden="true">
+            <span></span>
+            <svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z" fill="currentColor"/></svg>
+            <span></span>
+          </div>
+        </header>
+
+        <div class="letter-body-wrap-v2">
+          <div class="letter-body-v2" id="letter-body"></div>
+        </div>
+
+        <div class="wax-seal-v2" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="34" height="34">
+            <g fill="#fce4ec" opacity=".9">
+              <circle cx="20" cy="11" r="4" />
+              <circle cx="29" cy="20" r="4" />
+              <circle cx="20" cy="29" r="4" />
+              <circle cx="11" cy="20" r="4" />
+              <circle cx="20" cy="20" r="3.5" fill="#f48fb1" />
+            </g>
+          </svg>
+        </div>
+      </article>
+
+      <div class="letter-nav-row-v2">
+        <button class="nav-btn ghost" id="letterPrev">← prev</button>
+        <span class="page-indicator" id="page-indicator">letter 1 of 3</span>
+        <button class="nav-btn ghost" id="next-btn">next →</button>
+        <button class="nav-btn ghost" id="letterContinue" style="display:none">continue →</button>
+      </div>
+
+      <div style="margin-top:12px; text-align:center;">
+        <button class="nav-btn ghost" id="letterBack">← back</button>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<!-- PAGE 4: A YEAR TOGETHER -->
+<div class="page" id="p3">
+
+  <h1 class="memory-title">
+    My Birthday Girl ♥
+  </h1>
+
+  <div class="memory-grid">
+
+  <div class="polaroid p1">
+    <img src="141.jpg">
+    <span>♡</span>
+  </div>
+
+  <div class="polaroid p2">
+    <img src="144.jpg">
+    <span>♡</span>
+  </div>
+
+  <div class="polaroid p3">
+    <img src="142.jpg">
+    <span>♡</span>
+  </div>
+
+  <div class="polaroid p4">
+    <img src="145.jpg">
+    <span>♡</span>
+  </div>
+
+  <div class="polaroid p5">
+    <img src="143.jpg">
+    <span>♡</span>
+  </div>
+
+  <div class="polaroid p6">
+    <img src="146.jpg">
+    <span>♡</span>
+  </div>
+
+</div>
+
+<div class="memory-deco">🌸</div>
+<div class="memory-deco heart">💕</div>
+<div class="memory-deco flower">🌷</div>
+
+  <div class="flowers-nav">
+    <button class="nav-btn ghost" id="memoryBack">
+      ← back
+    </button>
+
+    <button class="nav-btn ghost" id="memoryNext">
+      next →
+    </button>
+  </div>
+
+</div>
+
+<!-- PAGE 5: FLOWERS -->
+<div class="page" id="p4">
+  <span class="flower-corner" style="top:-10px;left:-10px">🌺</span>
+  <span class="flower-corner" style="bottom:-10px;right:-10px;transform:scaleX(-1)">🌺</span>
+  <div class="flowers-title">Flowers for you 💐</div>
+  <div class="flowers-layout">
+    <div class="reason left" id="r1">I love you because you always know how to make me smile, even on my hardest days.</div>
+    <div class="bouquet-center">💐</div>
+    <div class="reason right" id="r2">I love you because you stay patient and understanding with me.</div>
+    <div class="reason left" id="r3">I love you because your love makes me feel safe, valued, and appreciated.</div>
+    <div class="reason right" id="r4">I love you because being with you makes my heart the happiest it has ever been.</div>
+  </div>
+  <div class="flowers-nav">
+    <button class="nav-btn ghost" id="flowersBack">← back</button>
+    <button class="nav-btn ghost" id="flowersNext">next →</button>
+  </div>
+</div>
+
+<!-- PAGE 6: SONG + PHOTOS -->
+<div class="page" id="p5">
+  <div class="song-title">Song that reminds me of you</div>
+  <div class="song-content">
+    <div class="song-left">
+      <div class="vinyl">💿</div>
+      <div class="yt-embed">
+        <div id="songPlayerWrap" style="width:100%;height:100%;">
+          <div id="songPlayer"></div>
+        </div>
+        <div id="songFallback" class="song-fallback" hidden>
+          <a id="songFallbackLink" class="song-fallback-btn"
+             href="https://www.youtube.com/watch?v=I_A9y1DCEx0"
+             target="_blank" rel="noopener">
+            ▶ Watch on YouTube
+          </a>
+        </div>
+      </div>
+      <p class="song-caption" id="songCaption">Every time this song plays, I don't just hear the music — I feel you. It captures everything I could never fully put into words. No matter how many times I listen, it always brings me back to you... like a quiet reminder of how much you mean to me.</p>
+    </div>
+    <div class="photo-strip">
+      <img class="strip-photo" src="str1.jpg" alt="">
+      <img class="strip-photo" src="str2.jpg" alt="">
+      <img class="strip-photo" src="str3.jpg" alt="">
+      <img class="strip-photo" src="str4.jpg" alt="">
+      <img class="strip-photo" src="str5.jpg" alt="">
+    </div>
+  </div>
+  <div class="song-back">
+    <button class="nav-btn ghost" id="songBack">← back</button>
+  </div>
+</div>
+
+<!-- EDIT OVERLAY -->
+<div class="edit-overlay" id="editOverlay">
+  <div class="edit-panel">
+    <h2>✏️ Customize</h2>
+    <div class="edit-section">
+      <h3>Page 1 — Envelope</h3>
+      <label>Title text</label>
+      <input type="text" id="eEnvTitle"/>
+    </div>
+    <div class="edit-section">
+      <h3>Page 2 — Letter</h3>
+      <label>Your message</label>
+      <textarea id="eLetter" rows="8"></textarea>
+    </div>
+    <div class="edit-section">
+      <h3>Page 3 — Reasons</h3>
+      <label>Reason 1 (top left)</label><input type="text" id="eR1"/>
+      <label>Reason 2 (top right)</label><input type="text" id="eR2"/>
+      <label>Reason 3 (bottom left)</label><input type="text" id="eR3"/>
+      <label>Reason 4 (bottom right)</label><input type="text" id="eR4"/>
+    </div>
+    <div class="edit-section">
+      <h3>Page 4 — Song caption</h3>
+      <label>Caption below the video</label>
+      <textarea id="eSongCaption" rows="4"></textarea>
+    </div>
+    <div class="edit-actions">
+      <button class="btn-cancel" id="cancelEdit">Cancel</button>
+      <button class="btn-save" id="saveEdit">Save 🩷</button>
+    </div>
+  </div>
+</div>
+
+<script src="fourteenth.js"></script>
+</body>
+</html>
